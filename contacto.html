@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Contacto — Berri</title>
+  <meta name="description" content="Contáctanos para iniciar tu proyecto digital con Berri. Respondemos en menos de 24 horas."/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6", "on-secondary-container": "#007151", "error": "#ba1a1a",
+            "on-primary-container": "#fffbff", "surface-dim": "#ded9d2", "on-error": "#ffffff",
+            "primary-fixed-dim": "#c5c0ff", "on-error-container": "#93000a", "on-surface-variant": "#474552",
+            "surface-container-highest": "#e7e2da", "inverse-primary": "#c5c0ff", "inverse-surface": "#32302b",
+            "surface-bright": "#fef9f1", "on-primary-fixed-variant": "#41379b", "tertiary-fixed-dim": "#c6c4df",
+            "on-surface": "#1d1c17", "on-tertiary-fixed-variant": "#45455b", "primary-fixed": "#e4dfff",
+            "secondary-fixed": "#86f8c9", "surface-container-low": "#f8f3eb", "on-tertiary-container": "#fffbff",
+            "background": "#fef9f1", "secondary-fixed-dim": "#68dbae", "surface-container-high": "#ece8e0",
+            "on-secondary": "#ffffff", "surface-container": "#f2ede5", "primary-container": "#7067cc",
+            "primary": "#574eb1", "on-secondary-fixed-variant": "#00513a", "surface-container-lowest": "#ffffff",
+            "tertiary": "#5a5a71", "surface-variant": "#e7e2da", "secondary": "#006c4e",
+            "tertiary-container": "#73728b", "surface": "#fef9f1", "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff", "outline-variant": "#c8c4d4", "inverse-on-surface": "#f5f0e8",
+            "outline": "#787583", "on-tertiary-fixed": "#1a1a2e", "on-background": "#1d1c17",
+            "surface-tint": "#5951b4", "tertiary-fixed": "#e2e0fc", "on-secondary-fixed": "#002115",
+            "secondary-container": "#83f5c6", "on-primary-fixed": "#140067"
+          },
+          "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          "spacing": { "margin-edge": "64px", "container-max": "1280px", "section-gap": "128px", "gutter": "32px", "unit": "8px" },
+          "fontFamily": { "body-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "display-xl": ["Inter"], "display-lg": ["Inter"], "label-caps": ["Inter"] },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body { background-color: #fef9f1; min-height: max(884px, 100dvh); }
+  </style>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-container selection:text-white">
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#fef9f1] flex-col items-center justify-center gap-10 hidden">
+  <button id="menu-close" class="absolute top-6 right-8 p-2 active:scale-95 transition-transform">
+    <span class="material-symbols-outlined text-[#1A1A2E] text-3xl">close</span>
+  </button>
+  <nav class="flex flex-col items-center gap-8">
+    <a href="index.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Inicio</a>
+    <a href="servicios.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Servicios</a>
+    <a href="sobre-nosotros.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Sobre nosotros</a>
+    <a href="portafolio.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Portafolio</a>
+    <a href="contacto.html" class="font-['Inter'] text-2xl font-bold text-[#7F77DD] border-b-2 border-[#7F77DD]">Contacto</a>
+  </nav>
+</div>
+
+<!-- Header -->
+<header class="bg-stone-50/80 backdrop-blur-md fixed top-0 w-full h-20 z-50 border-b border-[#1A1A2E]/10 shadow-sm">
+  <div class="flex items-center justify-between px-8 md:px-16 w-full max-w-full mx-auto h-full">
+    <a href="index.html" class="text-2xl font-black text-[#7F77DD] tracking-tighter">Berri</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="index.html">Inicio</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="servicios.html">Servicios</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="sobre-nosotros.html">Sobre nosotros</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="portafolio.html">Portafolio</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#7F77DD] font-bold border-b-2 border-[#7F77DD]" href="contacto.html">Contacto</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden p-2 active:scale-95 transition-transform">
+      <span class="material-symbols-outlined text-[#1A1A2E]">menu</span>
+    </button>
+  </div>
+</header>
+
+<main class="pt-32 pb-section-gap px-margin-edge max-w-container-max mx-auto">
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+    <!-- Contact Info -->
+    <div class="lg:col-span-5 flex flex-col justify-center mb-16 lg:mb-0">
+      <span class="font-label-caps text-label-caps text-primary mb-4 block">HABLEMOS</span>
+      <h1 class="font-display-lg text-display-lg text-on-background mb-8 leading-tight">Construyamos el próximo amanecer digital.</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-12">
+        Estamos listos para escuchar tu visión y convertirla en una experiencia excepcional.
+      </p>
+      <div class="space-y-8">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full text-primary">
+            <span class="material-symbols-outlined">mail</span>
+          </div>
+          <div>
+            <p class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Email</p>
+            <a href="mailto:hola@berri.mx" class="font-headline-md text-xl font-semibold hover:text-primary transition-colors">hola@berri.mx</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full text-primary">
+            <span class="material-symbols-outlined">call</span>
+          </div>
+          <div>
+            <p class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Teléfono</p>
+            <a href="tel:+529994567890" class="font-headline-md text-xl font-semibold hover:text-primary transition-colors">+52 (999) 456 7890</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full text-primary">
+            <span class="material-symbols-outlined">location_on</span>
+          </div>
+          <div>
+            <p class="font-label-caps text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Ubicación</p>
+            <p class="font-headline-md text-xl font-semibold">Mérida, Yucatán</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="lg:col-span-7">
+      <div class="bg-surface-container-low p-10 md:p-16 rounded-xl border border-on-background/5 shadow-sm">
+        <!-- Reemplaza XXXXXXXX con tu Form ID de formspree.io -->
+        <form class="space-y-10" action="https://formspree.io/f/XXXXXXXX" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo contacto — Berri"/>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="relative">
+              <label class="font-label-caps text-label-caps text-on-surface-variant block mb-2" for="name">NOMBRE COMPLETO</label>
+              <input class="w-full bg-transparent border-0 border-b-2 border-on-background/10 py-3 focus:ring-0 focus:border-primary transition-colors font-body-md text-on-background placeholder:text-on-surface-variant/30" id="name" name="name" placeholder="Juan Pérez" type="text" required/>
+            </div>
+            <div class="relative">
+              <label class="font-label-caps text-label-caps text-on-surface-variant block mb-2" for="email">CORREO ELECTRÓNICO</label>
+              <input class="w-full bg-transparent border-0 border-b-2 border-on-background/10 py-3 focus:ring-0 focus:border-primary transition-colors font-body-md text-on-background placeholder:text-on-surface-variant/30" id="email" name="email" placeholder="juan@ejemplo.com" type="email" required/>
+            </div>
+          </div>
+          <div class="relative">
+            <label class="font-label-caps text-label-caps text-on-surface-variant block mb-2" for="project">DETALLES DEL PROYECTO</label>
+            <textarea class="w-full bg-transparent border-0 border-b-2 border-on-background/10 py-3 focus:ring-0 focus:border-primary transition-colors font-body-md text-on-background resize-none placeholder:text-on-surface-variant/30" id="project" name="project" placeholder="Cuéntanos un poco sobre tu idea o necesidad..." rows="4"></textarea>
+          </div>
+          <div class="pt-4 flex flex-col md:flex-row items-center gap-6">
+            <button class="w-full md:w-auto bg-[#7F77DD] text-white px-10 py-4 font-label-caps text-sm tracking-widest rounded-full hover:bg-primary transition-all active:scale-95 shadow-lg shadow-primary/20" type="submit">
+              ENVIAR MENSAJE
+            </button>
+            <p class="font-body-md text-sm text-on-surface-variant/60 italic">Respondemos en menos de 24 horas.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="mt-section-gap">
+    <div class="w-full h-[400px] rounded-xl overflow-hidden grayscale contrast-125 opacity-80 border border-on-background/10">
+      <img class="w-full h-full object-cover" alt="Mapa de Mérida, Yucatán" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD02R3mrG0gaN61UM9CzbWhcs4vnKgc8UP83DdYgXh4dYhvHzam5oj33H0RXt0cLrDJ3n6nCY57-_n8rOkVwENp-fJUeUujvsyc7r8iLOy-SXp-zuoNabQoPd6FFZsEhUxVJx9jEWUqbR3NygqJP3tAL7YhWw4PU-hzqCG0HM0mIaIcmI_q3Sd0aPU6OaznoBO2S8rBnfTPvo1JRASsLd4pMeMnDx6ey3SDAn_sWKU0H3-k04tG5Uk9OODRkAuQevlsObkDwDwSkw"/>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-stone-50 w-full py-16 px-8 border-t border-[#1A1A2E]/10">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+    <div>
+      <span class="font-bold text-[#7F77DD] text-xl mb-4 block">Berri.</span>
+      <p class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50">© 2025 Berri. Nuevo amanecer del sureste.</p>
+    </div>
+    <div class="flex flex-wrap gap-8 md:justify-end">
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Privacidad</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Términos</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Instagram</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+  menuClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+    document.body.style.overflow = '';
+  });
+</script>
+</body>
+</html>

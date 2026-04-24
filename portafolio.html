@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Portafolio — Berri</title>
+  <meta name="description" content="Explora el portafolio de Berri: proyectos de branding, desarrollo web y marketing digital del sureste mexicano."/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6", "on-secondary-container": "#007151", "error": "#ba1a1a",
+            "on-primary-container": "#fffbff", "surface-dim": "#ded9d2", "on-error": "#ffffff",
+            "primary-fixed-dim": "#c5c0ff", "on-error-container": "#93000a", "on-surface-variant": "#474552",
+            "surface-container-highest": "#e7e2da", "inverse-primary": "#c5c0ff", "inverse-surface": "#32302b",
+            "surface-bright": "#fef9f1", "on-primary-fixed-variant": "#41379b", "tertiary-fixed-dim": "#c6c4df",
+            "on-surface": "#1d1c17", "on-tertiary-fixed-variant": "#45455b", "primary-fixed": "#e4dfff",
+            "secondary-fixed": "#86f8c9", "surface-container-low": "#f8f3eb", "on-tertiary-container": "#fffbff",
+            "background": "#fef9f1", "secondary-fixed-dim": "#68dbae", "surface-container-high": "#ece8e0",
+            "on-secondary": "#ffffff", "surface-container": "#f2ede5", "primary-container": "#7067cc",
+            "primary": "#574eb1", "on-secondary-fixed-variant": "#00513a", "surface-container-lowest": "#ffffff",
+            "tertiary": "#5a5a71", "surface-variant": "#e7e2da", "secondary": "#006c4e",
+            "tertiary-container": "#73728b", "surface": "#fef9f1", "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff", "outline-variant": "#c8c4d4", "inverse-on-surface": "#f5f0e8",
+            "outline": "#787583", "on-tertiary-fixed": "#1a1a2e", "on-background": "#1d1c17",
+            "surface-tint": "#5951b4", "tertiary-fixed": "#e2e0fc", "on-secondary-fixed": "#002115",
+            "secondary-container": "#83f5c6", "on-primary-fixed": "#140067"
+          },
+          "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          "spacing": { "margin-edge": "64px", "container-max": "1280px", "section-gap": "128px", "gutter": "32px", "unit": "8px" },
+          "fontFamily": { "body-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "display-xl": ["Inter"], "display-lg": ["Inter"], "label-caps": ["Inter"] },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block; line-height: 1;
+    }
+    body { background-color: #fef9f1; min-height: max(884px, 100dvh); }
+    .project-card:hover .project-image { transform: scale(1.05); }
+    .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 32px; }
+  </style>
+</head>
+<body class="font-body-md text-on-background antialiased">
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#fef9f1] flex-col items-center justify-center gap-10 hidden">
+  <button id="menu-close" class="absolute top-6 right-8 p-2 active:scale-95 transition-transform">
+    <span class="material-symbols-outlined text-[#1A1A2E] text-3xl">close</span>
+  </button>
+  <nav class="flex flex-col items-center gap-8">
+    <a href="index.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Inicio</a>
+    <a href="servicios.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Servicios</a>
+    <a href="sobre-nosotros.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Sobre nosotros</a>
+    <a href="portafolio.html" class="font-['Inter'] text-2xl font-bold text-[#7F77DD] border-b-2 border-[#7F77DD]">Portafolio</a>
+    <a href="contacto.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Contacto</a>
+  </nav>
+</div>
+
+<!-- Header -->
+<header class="fixed top-0 w-full h-20 z-50 bg-stone-50/80 backdrop-blur-md border-b border-[#1A1A2E]/10 shadow-sm flex items-center justify-between px-8 md:px-16">
+  <a href="index.html" class="text-2xl font-black text-[#7F77DD] tracking-tighter">Berri</a>
+  <nav class="hidden md:flex items-center gap-8">
+    <a class="font-['Inter'] font-semibold tracking-tight text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="index.html">Inicio</a>
+    <a class="font-['Inter'] font-semibold tracking-tight text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="servicios.html">Servicios</a>
+    <a class="font-['Inter'] font-semibold tracking-tight text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="sobre-nosotros.html">Sobre nosotros</a>
+    <a class="font-['Inter'] font-semibold tracking-tight text-[#7F77DD] font-bold border-b-2 border-[#7F77DD]" href="portafolio.html">Portafolio</a>
+    <a class="font-['Inter'] font-semibold tracking-tight text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="contacto.html">Contacto</a>
+  </nav>
+  <button id="menu-btn" class="md:hidden p-2 active:scale-95 transition-transform">
+    <span class="material-symbols-outlined text-[#1A1A2E]">menu</span>
+  </button>
+</header>
+
+<main class="pt-32 pb-32 max-w-[1280px] mx-auto px-8 md:px-16">
+  <!-- Hero -->
+  <section class="mb-24">
+    <div class="max-w-3xl">
+      <span class="font-label-caps text-label-caps text-primary mb-4 block">NUESTRO TRABAJO</span>
+      <h1 class="font-display-xl text-display-xl text-on-background mb-8">Curaduría de impacto digital.</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">Explora nuestra selección de proyectos donde la técnica se encuentra con la calidez del sureste para crear experiencias únicas.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <div class="bento-grid">
+    <!-- Project 1 -->
+    <div class="col-span-12 md:col-span-8 project-card group relative overflow-hidden rounded-lg bg-surface-container border border-[#1A1A2E]/10">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img alt="Colaboración en oficina moderna" class="project-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK2nBpXFq0HAqY8C2S6Ag0iTGRuLOulT44m3_DhctxtCX07IxjIHhYVY_G4oA21xiCV6IXwF297Wvy8xDuZ2FfleLS__iX4RQHd2HUWOKybrGkyt6WeSyD3_2MJHEXh7uKobdli-Em2VyVZEvNCozBybD7O46hwsW4r-rfHvLyFTsAA_bmXAsCzyYOnMdTU0fTDP0sngiPmLFHps17-aumjInKOnhRhHFXL2aOg5Evp7wUqmHZKFFfvaV9FPkKQYNVJhzX4d9CPA"/>
+      </div>
+      <div class="p-8 md:p-12 flex flex-col justify-end">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="font-label-caps text-[10px] tracking-widest bg-primary text-on-primary px-3 py-1 rounded-full">BRANDING</span>
+          <span class="font-label-caps text-[10px] tracking-widest bg-surface border border-outline/20 px-3 py-1 rounded-full">2024</span>
+        </div>
+        <h3 class="font-display-lg text-display-lg mb-4">Amanecer Residencial</h3>
+        <p class="font-body-md text-on-surface-variant max-w-xl">Identidad visual integral para un desarrollo inmobiliario premium inspirado en la luz de la costa yucateca.</p>
+        <div class="mt-8">
+          <a href="contacto.html" class="flex items-center gap-2 font-['Inter'] font-bold text-primary active:scale-95 transition-transform w-fit">
+            Ver proyecto <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="col-span-12 md:col-span-4 project-card group bg-surface-container border border-[#1A1A2E]/10 rounded-lg flex flex-col">
+      <div class="aspect-[4/5] overflow-hidden">
+        <img alt="Programador trabajando en laptop" class="project-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5KSl3fjfkCSs-9yscUtxTygNbpPxMIBr-IRcGMmbXyxuWKAt44dJMpGq9CEUHc-F6p0Yxx9oT8qGtGs4tjL95WPYrqY4WjiGC9RGhqDutXDMXKeokhekWsxUmzDPix5wuuqKPaX8xCdCos_2mCXHOz9J19Ld9ZrzAtKhWJHXwV8W4iXsYc_AFKAGKAAj9i2_BJe357AX6lRhFaCAfxfS96iSlf2u3zCXeZAezOIVVyHIIkfLu4Nd0aM5AHQW5g3AmTfCVXlBn1A"/>
+      </div>
+      <div class="p-8 flex flex-col flex-grow">
+        <span class="font-label-caps text-[10px] tracking-widest bg-primary text-on-primary px-3 py-1 rounded-full w-fit mb-4">WEB DESIGN</span>
+        <h3 class="font-headline-md text-headline-md mb-4">Maya Tech Hub</h3>
+        <p class="font-body-md text-on-surface-variant">Plataforma digital para la comunidad tecnológica del sureste, enfocada en la usabilidad y el networking.</p>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="col-span-12 md:col-span-6 project-card group bg-surface-container border border-[#1A1A2E]/10 rounded-lg overflow-hidden">
+      <div class="aspect-square overflow-hidden">
+        <img alt="Visualización de datos elegante" class="project-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIl5JCXbPL7ESKEvYcpAQWxJ_Vo1vJd-jiN7az4dt_9e7hXP_hI80DpB746yoWJt4JdGDmKq-huYxKjvbEBWCua8TKGH_i8L-scunTL64t4-hxHWlPx62AhH8C2BhU0_xMysxXYLeWh_zVOWWehGOgOxQN4cPgPKNXkNUBD7uqljEyZRyBWs-RCd9rqMfvdKoUJiVmmuwHFvhZ-8-iuOTTKucXaHIvn0mZAYaD7G8lgbrKxMJ5vpNLDlXZv_FXs0FZnsa82PQjJw"/>
+      </div>
+      <div class="p-8">
+        <span class="font-label-caps text-[10px] tracking-widest bg-primary text-on-primary px-3 py-1 rounded-full w-fit mb-4 inline-block">MARKETING</span>
+        <h3 class="font-headline-md text-headline-md mb-2">Selva Analytics</h3>
+        <p class="font-body-md text-on-surface-variant">Estrategia de crecimiento basada en datos para startups locales en expansión global.</p>
+      </div>
+    </div>
+    <!-- Project 4 -->
+    <div class="col-span-12 md:col-span-6 project-card group bg-surface-container border border-[#1A1A2E]/10 rounded-lg overflow-hidden">
+      <div class="aspect-square overflow-hidden">
+        <img alt="Reunión en sala de diseño" class="project-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtL6VjNxU3nLn9PFX80xz8SpykcGDHmzZdInmFd8ZraXjbhXXjzTH77KZuoOZoJFKCD-VixxVuEqnU_zP_dltfwZuqceecpCFV9_lDzdtq9yfmugjXJ-921-KQu-Qunh2H7Xj8u2D84r9T-28eVz-oL91UeU1p5_VQQuZ3puMU-sKjhitEK1DVGYD6dYhbVMinHpGOITlOUv-EmxAS7niFvfc9EFNm37EEjvMP_dmTMXB2FTslbkHnN5YS31gdBHkCHxUcY11zuQ"/>
+      </div>
+      <div class="p-8">
+        <span class="font-label-caps text-[10px] tracking-widest bg-primary text-on-primary px-3 py-1 rounded-full w-fit mb-4 inline-block">CONSULTING</span>
+        <h3 class="font-headline-md text-headline-md mb-2">Horizonte 2030</h3>
+        <p class="font-body-md text-on-surface-variant">Rediseño de procesos y cultura organizacional para la nueva era del trabajo remoto.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="mt-32 p-16 bg-primary text-on-primary rounded-lg text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#7F77DD]/20 to-transparent pointer-events-none"></div>
+    <div class="relative z-10">
+      <h2 class="font-display-lg text-display-lg mb-6">¿Listo para crear algo nuevo?</h2>
+      <p class="font-body-lg text-on-primary/80 mb-10 max-w-2xl mx-auto">Nuestro equipo está listo para llevar tu visión al siguiente nivel con precisión técnica y calidez humana.</p>
+      <a href="contacto.html" class="inline-block bg-surface text-primary font-['Inter'] font-bold px-10 py-4 rounded-full hover:shadow-xl active:scale-95 transition-all">
+        Inicia tu proyecto
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-[#1A1A2E]/10 bg-stone-50">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+    <div>
+      <div class="font-bold text-[#7F77DD] mb-4 text-xl">Berri.</div>
+      <p class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50">© 2025 Berri. Nuevo amanecer del sureste.</p>
+    </div>
+    <div class="flex flex-wrap gap-8 md:justify-end">
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Privacidad</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Términos</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Instagram</a>
+      <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+  menuClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+    document.body.style.overflow = '';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Servicios — Berri</title>
+  <meta name="description" content="Descubre los servicios de Berri: arquitectura digital, identidad visual, desarrollo web, SEO, UX research y marketing digital."/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6", "on-secondary-container": "#007151", "error": "#ba1a1a",
+            "on-primary-container": "#fffbff", "surface-dim": "#ded9d2", "on-error": "#ffffff",
+            "primary-fixed-dim": "#c5c0ff", "on-error-container": "#93000a", "on-surface-variant": "#474552",
+            "surface-container-highest": "#e7e2da", "inverse-primary": "#c5c0ff", "inverse-surface": "#32302b",
+            "surface-bright": "#fef9f1", "on-primary-fixed-variant": "#41379b", "tertiary-fixed-dim": "#c6c4df",
+            "on-surface": "#1d1c17", "on-tertiary-fixed-variant": "#45455b", "primary-fixed": "#e4dfff",
+            "secondary-fixed": "#86f8c9", "surface-container-low": "#f8f3eb", "on-tertiary-container": "#fffbff",
+            "background": "#fef9f1", "secondary-fixed-dim": "#68dbae", "surface-container-high": "#ece8e0",
+            "on-secondary": "#ffffff", "surface-container": "#f2ede5", "primary-container": "#7067cc",
+            "primary": "#574eb1", "on-secondary-fixed-variant": "#00513a", "surface-container-lowest": "#ffffff",
+            "tertiary": "#5a5a71", "surface-variant": "#e7e2da", "secondary": "#006c4e",
+            "tertiary-container": "#73728b", "surface": "#fef9f1", "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff", "outline-variant": "#c8c4d4", "inverse-on-surface": "#f5f0e8",
+            "outline": "#787583", "on-tertiary-fixed": "#1a1a2e", "on-background": "#1d1c17",
+            "surface-tint": "#5951b4", "tertiary-fixed": "#e2e0fc", "on-secondary-fixed": "#002115",
+            "secondary-container": "#83f5c6", "on-primary-fixed": "#140067"
+          },
+          "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          "spacing": { "margin-edge": "64px", "container-max": "1280px", "section-gap": "128px", "gutter": "32px", "unit": "8px" },
+          "fontFamily": { "body-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "display-xl": ["Inter"], "display-lg": ["Inter"], "label-caps": ["Inter"] },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body { background-color: #fef9f1; min-height: max(884px, 100dvh); }
+  </style>
+</head>
+<body class="font-body-md text-on-background overflow-x-hidden">
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#fef9f1] flex-col items-center justify-center gap-10 hidden">
+  <button id="menu-close" class="absolute top-6 right-8 p-2 active:scale-95 transition-transform">
+    <span class="material-symbols-outlined text-[#1A1A2E] text-3xl">close</span>
+  </button>
+  <nav class="flex flex-col items-center gap-8">
+    <a href="index.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Inicio</a>
+    <a href="servicios.html" class="font-['Inter'] text-2xl font-bold text-[#7F77DD] border-b-2 border-[#7F77DD]">Servicios</a>
+    <a href="sobre-nosotros.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Sobre nosotros</a>
+    <a href="portafolio.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Portafolio</a>
+    <a href="contacto.html" class="font-['Inter'] text-2xl font-bold text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-colors">Contacto</a>
+  </nav>
+</div>
+
+<!-- Header -->
+<nav class="bg-stone-50/80 backdrop-blur-md fixed top-0 w-full h-20 z-50 border-b border-[#1A1A2E]/10 shadow-sm flex items-center justify-between px-8 md:px-16">
+  <a href="index.html" class="text-2xl font-black text-[#7F77DD] tracking-tighter">Berri</a>
+  <div class="hidden md:flex items-center space-x-8">
+    <a class="font-body-md text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="index.html">Inicio</a>
+    <a class="font-body-md text-[#7F77DD] font-bold border-b-2 border-[#7F77DD]" href="servicios.html">Servicios</a>
+    <a class="font-body-md text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="sobre-nosotros.html">Sobre nosotros</a>
+    <a class="font-body-md text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="portafolio.html">Portafolio</a>
+    <a class="font-body-md text-[#1A1A2E]/60 hover:text-[#7F77DD] transition-all duration-300" href="contacto.html">Contacto</a>
+  </div>
+  <button id="menu-btn" class="md:hidden p-2 active:scale-95 transition-transform">
+    <span class="material-symbols-outlined text-[#1A1A2E]">menu</span>
+  </button>
+</nav>
+
+<main class="mt-20">
+  <!-- Hero -->
+  <section class="min-h-[500px] flex flex-col justify-center px-8 md:px-16 max-w-7xl mx-auto py-24">
+    <div class="max-w-3xl">
+      <span class="font-label-caps text-label-caps text-primary mb-4 block">NUESTROS SERVICIOS</span>
+      <h1 class="font-display-xl text-on-tertiary-fixed mb-8 leading-[1.05]">Cada servicio,<br/>diseñado para transformar.</h1>
+      <p class="font-body-lg text-on-surface-variant max-w-2xl">
+        Combinamos estrategia, diseño y tecnología para elevar marcas regionales a estándares de clase mundial. Cada solución es construida a medida para tu visión.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-24 px-8 md:px-16 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Arquitectura Digital -->
+      <div class="group bg-white border border-[#1A1A2E]/10 rounded-xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="w-16 h-16 bg-primary/5 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-tertiary-fixed mb-4">Arquitectura Digital</h3>
+        <p class="font-body-md text-on-surface-variant mb-8 flex-grow">
+          Diseñamos estructuras web robustas que priorizan la usabilidad, el flujo conversacional y la conversión. Cada página tiene un propósito claro dentro del ecosistema digital de tu marca.
+        </p>
+        <a href="contacto.html" class="text-primary font-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
+          Iniciar proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- Identidad Visual -->
+      <div class="group bg-[#1A1A2E] rounded-xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary-fixed-dim text-3xl">palette</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-white mb-4">Identidad Visual</h3>
+        <p class="font-body-md text-white/70 mb-8 flex-grow">
+          Creamos sistemas visuales cohesivos que capturan la esencia única de su marca. Desde logotipos y paletas de color hasta guías de estilo completas que aseguran consistencia en todos los puntos de contacto.
+        </p>
+        <a href="contacto.html" class="text-secondary-fixed-dim font-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
+          Iniciar proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- Desarrollo Web -->
+      <div class="group bg-surface-container border border-[#1A1A2E]/5 rounded-xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="w-16 h-16 bg-primary/5 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-primary text-3xl">code</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-tertiary-fixed mb-4">Desarrollo Web</h3>
+        <p class="font-body-md text-on-surface-variant mb-8 flex-grow">
+          Código limpio, semántico y optimizado para velocidad y buscadores. Construimos desde landing pages de alto impacto hasta plataformas web complejas, siempre con rendimiento y accesibilidad como prioridad.
+        </p>
+        <a href="contacto.html" class="text-primary font-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
+          Iniciar proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- Estrategia SEO -->
+      <div class="group bg-white border border-[#1A1A2E]/10 rounded-xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="w-16 h-16 bg-secondary/5 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">search_insights</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-tertiary-fixed mb-4">Estrategia SEO</h3>
+        <p class="font-body-md text-on-surface-variant mb-8 flex-grow">
+          Posicionamiento orgánico diseñado para atraer a tu audiencia ideal de forma constante. Auditorías técnicas, estrategia de contenido y optimización continua para dominar los resultados de búsqueda.
+        </p>
+        <a href="contacto.html" class="text-primary font-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
+          Iniciar proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- UX Research -->
+      <div class="group bg-primary/5 border border-primary/10 rounded-xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-tertiary-fixed mb-4">UX Research</h3>
+        <p class="font-body-md text-on-surface-variant mb-8 flex-grow">
+          Decisiones basadas en datos reales de usuarios. Entrevistas, pruebas de usabilidad y análisis de comportamiento que garantizan que cada interacción sea significativa y esté alineada con los objetivos del negocio.
+        </p>
+        <a href="contacto.html" class="text-primary font-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
+          Iniciar proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- Marketing Digital -->
+      <div class="group bg-white border border-[#1A1A2E]/10 rounded-xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col">
+        <div class="w-16 h-16 bg-secondary/5 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">campaign</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-tertiary-fixed mb-4">Marketing Digital</h3>
+        <p class="font-body-md text-on-surface-variant mb-8 flex-grow">
+          Estrategias de crecimiento que conectan tu marca con las personas adecuadas en el momento preciso. Gestión de redes sociales, campañas de pago y contenido que convierte visitantes en clientes.
+        </p>
+        <a href="contacto.html" class="text-primary font-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
+          Iniciar proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-32 bg-[#1A1A2E] text-white">
+    <div class="px-8 md:px-16 max-w-7xl mx-auto">
+      <div class="mb-16">
+        <span class="font-label-caps text-label-caps text-secondary-fixed-dim mb-4 block">NUESTRO PROCESO</span>
+        <h2 class="font-display-lg text-white">De la idea al lanzamiento.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="flex flex-col gap-4">
+          <div class="w-12 h-12 rounded-full border-2 border-secondary-fixed-dim flex items-center justify-center font-bold text-secondary-fixed-dim text-lg">1</div>
+          <h4 class="font-['Inter'] font-bold text-white">Descubrimiento</h4>
+          <p class="font-body-md text-white/60 text-sm">Escuchamos tu visión, analizamos tu mercado y entendemos a tu audiencia.</p>
+        </div>
+        <div class="hidden md:flex items-start pt-6 justify-center text-secondary-fixed-dim/40">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="w-12 h-12 rounded-full border-2 border-secondary-fixed-dim flex items-center justify-center font-bold text-secondary-fixed-dim text-lg">2</div>
+          <h4 class="font-['Inter'] font-bold text-white">Estrategia</h4>
+          <p class="font-body-md text-white/60 text-sm">Definimos objetivos, KPIs y el plan de acción más eficiente para tu proyecto.</p>
+        </div>
+        <div class="hidden md:flex items-start pt-6 justify-center text-secondary-fixed-dim/40">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="w-12 h-12 rounded-full border-2 border-secondary-fixed-dim flex items-center justify-center font-bold text-secondary-fixed-dim text-lg">3</div>
+          <h4 class="font-['Inter'] font-bold text-white">Diseño</h4>
+          <p class="font-body-md text-white/60 text-sm">Construimos el sistema visual: wireframes, prototipo y dirección de arte.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mt-12">
+        <div class="flex flex-col gap-4">
+          <div class="w-12 h-12 rounded-full border-2 border-secondary-fixed-dim flex items-center justify-center font-bold text-secondary-fixed-dim text-lg">4</div>
+          <h4 class="font-['Inter'] font-bold text-white">Desarrollo</h4>
+          <p class="font-body-md text-white/60 text-sm">Implementamos con código de calidad, pruebas y optimización de rendimiento.</p>
+        </div>
+        <div class="hidden md:flex items-start pt-6 justify-center text-secondary-fixed-dim/40">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="w-12 h-12 rounded-full border-2 border-secondary-fixed-dim flex items-center justify-center font-bold text-secondary-fixed-dim text-lg">5</div>
+          <h4 class="font-['Inter'] font-bold text-white">Lanzamiento</h4>
+          <p class="font-body-md text-white/60 text-sm">Desplegamos, medimos resultados y acompañamos el crecimiento continuo.</p>
+        </div>
+        <div class="md:col-span-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-32 px-8 md:px-16 max-w-7xl mx-auto text-center">
+    <span class="font-label-caps text-label-caps text-primary mb-4 block">¿TIENES UN PROYECTO EN MENTE?</span>
+    <h2 class="font-display-lg text-on-tertiary-fixed mb-8">Hablemos de tu transformación digital.</h2>
+    <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+      Agenda una consultoría gratuita y descubre cómo podemos llevar tu marca al siguiente nivel. Sin compromisos, con resultados reales.
+    </p>
+    <div class="flex flex-wrap gap-6 justify-center">
+      <a href="contacto.html" class="inline-block bg-primary text-on-primary font-label-caps px-10 py-4 rounded-lg shadow-lg active:scale-95 transition-transform hover:bg-primary-container">
+        Agendar consultoría gratuita
+      </a>
+      <a href="portafolio.html" class="inline-block border-2 border-[#1A1A2E] text-[#1A1A2E] font-label-caps px-10 py-4 rounded-lg hover:bg-[#1A1A2E] hover:text-white transition-all active:scale-95">
+        Ver nuestro trabajo
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-stone-50 w-full py-16 px-8 border-t border-[#1A1A2E]/10">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+    <div>
+      <div class="font-bold text-[#7F77DD] text-2xl mb-4">Berri</div>
+      <p class="font-body-md text-[#1A1A2E]/50 mb-2 max-w-xs uppercase tracking-tighter">Nuevo amanecer del sureste.</p>
+      <p class="font-body-md text-[#1A1A2E]/50">© 2025 Berri. Todos los derechos reservados.</p>
+    </div>
+    <div class="flex flex-col md:items-end gap-6">
+      <div class="flex gap-8">
+        <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Privacidad</a>
+        <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Términos</a>
+      </div>
+      <div class="flex gap-8">
+        <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">Instagram</a>
+        <a class="font-['Inter'] text-sm tracking-wide uppercase text-[#1A1A2E]/50 hover:text-[#7F77DD] transition-colors" href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+  menuClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+    document.body.style.overflow = '';
+  });
+</script>
+</body>
+</html>
